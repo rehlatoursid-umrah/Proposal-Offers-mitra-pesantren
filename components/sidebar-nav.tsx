@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image"
+
 const navItems = [
   { id: "intro", label: "Introduction" },
   { id: "about", label: "About Us" },
@@ -15,11 +17,18 @@ const navItems = [
 export function SidebarNav() {
   return (
     <div className="fixed left-0 top-0 h-screen w-64 bg-background border-r border-border overflow-y-auto pt-8">
-      <div className="px-6 mb-8">
-        <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">
-          R
+      <div className="px-6 mb-8 flex justify-center">
+        <div className="w-16 h-16 rounded-lg overflow-hidden flex items-center justify-center">
+          <Image
+            src="/rem.png"
+            alt="Logo"
+            width={64}
+            height={64}
+            className="object-contain"
+          />
         </div>
       </div>
+
       <nav className="space-y-2 px-6">
         {navItems.map((item) => (
           <a
