@@ -22,8 +22,8 @@ export function SidebarNav() {
           <Image
             src="/rem.png"
             alt="Logo"
-            width={64}
-            height={64}
+            width={96}
+            height={96}
             className="object-contain"
           />
         </div>
