@@ -175,6 +175,68 @@
   }
   100% {
     transform: translate(0, 0) rotate(0deg);
+
+/* ✈️ Animasi Pesawat */
+.bg-floating-icons {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.bg-floating-icons .icon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  opacity: 0.35;
+  fill: #3a0519;
+  animation: fly 30s linear infinite;
+}
+
+.bg-floating-icons .icon:nth-child(1) {
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.bg-floating-icons .icon:nth-child(2) {
+  top: 30%;
+  right: 10%;
+  animation-delay: 5s;
+}
+
+.bg-floating-icons .icon:nth-child(3) {
+  bottom: 20%;
+  left: 15%;
+  animation-delay: 10s;
+}
+
+.bg-floating-icons .icon:nth-child(4) {
+  bottom: 10%;
+  right: 20%;
+  animation-delay: 15s;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.2;
+  }
+  25% {
+    transform: translate(30px, -30px) rotate(15deg);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(60px, 30px) rotate(30deg);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translate(-30px, 60px) rotate(-20deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.2;
   }
 }
+
 
