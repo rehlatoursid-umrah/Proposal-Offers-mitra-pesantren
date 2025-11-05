@@ -124,119 +124,40 @@
     @apply bg-background text-foreground;
   }
 }
-/* === Floating Airplane Background === */
+/* Animasi pesawat melayang */
 .bg-floating-icons {
-  position: fixed;
+  position: absolute;
   inset: 0;
   overflow: hidden;
   z-index: 0;
-  pointer-events: none;
-  background: transparent;
 }
 
 .bg-floating-icons .icon {
   position: absolute;
-  width: 90px;
-  height: 90px;
-  color: #3a0519;
-  opacity: 0.35;
-  animation: float 40s ease-in-out infinite;
-}
-
-/* Posisi acak */
-.bg-floating-icons .icon:nth-child(1) {
-  top: 10%;
-  left: 5%;
-  animation-delay: 0s;
-}
-.bg-floating-icons .icon:nth-child(2) {
-  top: 25%;
-  right: 8%;
-  animation-delay: 6s;
-}
-.bg-floating-icons .icon:nth-child(3) {
-  bottom: 20%;
-  left: 12%;
-  animation-delay: 12s;
-}
-.bg-floating-icons .icon:nth-child(4) {
-  bottom: 15%;
-  right: 10%;
-  animation-delay: 18s;
-}
-
-/* Efek gerak lembut seperti di udara */
-@keyframes float {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  50% {
-    transform: translate(30px, -30px) rotate(20deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(0deg);
-
-/* ✈️ Animasi Pesawat */
-.bg-floating-icons {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-}
-
-.bg-floating-icons .icon {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  opacity: 0.35;
-  fill: #3a0519;
-  animation: fly 30s linear infinite;
-}
-
-.bg-floating-icons .icon:nth-child(1) {
-  top: 10%;
-  left: 5%;
-  animation-delay: 0s;
-}
-
-.bg-floating-icons .icon:nth-child(2) {
-  top: 30%;
-  right: 10%;
-  animation-delay: 5s;
-}
-
-.bg-floating-icons .icon:nth-child(3) {
-  bottom: 20%;
-  left: 15%;
-  animation-delay: 10s;
-}
-
-.bg-floating-icons .icon:nth-child(4) {
-  bottom: 10%;
-  right: 20%;
-  animation-delay: 15s;
+  color: #b0aeb4;
+  opacity: 0.3;
+  animation: fly 25s linear infinite;
 }
 
 @keyframes fly {
   0% {
-    transform: translateY(0px) rotate(0deg);
+    transform: translateX(-10vw) translateY(0) rotate(0deg);
     opacity: 0.2;
   }
   25% {
-    transform: translate(30px, -30px) rotate(15deg);
+    transform: translateX(20vw) translateY(-5vh) rotate(10deg);
     opacity: 0.4;
   }
   50% {
-    transform: translate(60px, 30px) rotate(30deg);
+    transform: translateX(50vw) translateY(3vh) rotate(0deg);
     opacity: 0.3;
   }
   75% {
-    transform: translate(-30px, 60px) rotate(-20deg);
-    opacity: 0.4;
+    transform: translateX(75vw) translateY(-8vh) rotate(-5deg);
+    opacity: 0.5;
   }
   100% {
-    transform: translateY(0px) rotate(0deg);
+    transform: translateX(110vw) translateY(0) rotate(0deg);
     opacity: 0.2;
   }
 }
-
-
