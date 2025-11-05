@@ -89,11 +89,12 @@ export default function Home() {
       </div>
 
       {/* 🌙 Konten utama */}
-      <SidebarNav />
-      <main className="flex-1 ml-64 relative z-10">
-        <ProposalHeader />
 
-        <div className="max-w-4xl mx-auto">
+<div className="relative z-10 flex min-h-screen w-full">
+        <SidebarNav />
+        <main className="flex-1 ml-64">
+
+
           {/* TENTANG REHLATOURS */}
           <section id="about" className="py-16 px-8">
             <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
