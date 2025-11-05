@@ -22,13 +22,13 @@ const navItems = [
 
 export function SidebarNav() {
   return (
-    <div className="fixed left-0 top-0 h-screen w-64 bg-background border-r border-border overflow-y-auto pt-6">
+    <div className="fixed left-0 top-0 h-screen w-64 bg-background border-r border-border overflow-y-auto pt-10">
       {/* LOGO */}
-      <div className="pl-6 mb-3 flex items-start">
+      <div className="pl-8 mb-4 flex items-start">
         <Image
           src="/rem.png"
           alt="Logo Rehlatours"
-          width={170}     // Logo lebih besar
+          width={170}     // ukuran logo tetap besar
           height={170}
           className="object-contain"
           priority
@@ -36,7 +36,7 @@ export function SidebarNav() {
       </div>
 
       {/* NAVIGATION */}
-      <nav className={`space-y-1 pl-6 ${roboto.className}`}>
+      <nav className={`space-y-1 pl-9 ${roboto.className}`}>
         {navItems.map((item) => (
           <a
             key={item.id}
