@@ -377,28 +377,6 @@ export default function Home() {
           </footer>
         </div>
       </main>
-        <style jsx global>{`
-  /* app/globals.css */
-body {
-  background-color: white;
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgba(58, 5, 25, 0.1),
-    rgba(58, 5, 25, 0.1) 1px,
-    transparent 1px,
-    transparent 20px
-  );
-  animation: moveDiagonal 40s linear infinite;
-}
-
-@keyframes moveDiagonal {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 200px 200px;
-  }
-}
     </div>
   );
 }
