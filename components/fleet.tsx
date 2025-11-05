@@ -10,7 +10,7 @@ export function Fleet() {
       seats: 2,
       smallBaggage: 2,
       largeBaggage: 2,
-      count: 4,
+      count: 24,
       image: "/sedan.png",
     },
     {
@@ -18,7 +18,7 @@ export function Fleet() {
       seats: 7,
       smallBaggage: 7,
       largeBaggage: 7,
-      count: 7,
+      count: 24,
       image: "/h1.png",
     },
     {
@@ -26,7 +26,7 @@ export function Fleet() {
       seats: 5,
       smallBaggage: 5,
       largeBaggage: 5,
-      count: 5,
+      count: 24,
       image: "/staria.png",
     },
     {
@@ -34,7 +34,7 @@ export function Fleet() {
       seats: 4,
       smallBaggage: 4,
       largeBaggage: 4,
-      count: 4,
+      count: 24,
       image: "/gmc.png",
     },
     {
@@ -42,7 +42,7 @@ export function Fleet() {
       seats: 16,
       smallBaggage: 16,
       largeBaggage: 16,
-      count: 16,
+      count: 24,
       image: "/Coaster.png",
     },
     {
@@ -50,7 +50,7 @@ export function Fleet() {
       seats: 45,
       smallBaggage: 45,
       largeBaggage: 45,
-      count: 45,
+      count: 24,
       image: "/bis_.png",
     },
   ]
@@ -194,7 +194,7 @@ export function Fleet() {
                   </div>
 
                   <div className="mt-4 pt-4 border-t border-border">
-                    <p className="text-sm font-semibold text-primary">{vehicle.count} Unit Tersedia</p>
+                    <p className="text-sm font-semibold text-primary">{vehicle.count} Jam Tersedia</p>
                   </div>
                 </div>
               </Card>
