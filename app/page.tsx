@@ -162,7 +162,7 @@ export default function Home() {
               </div>
               <div>
                 <img
-                  src="/pesantren-islamic-boarding-school-students-learnin.jpg"
+                  src="/pst.jpg"
                   alt="Pesantren"
                   className="rounded-lg shadow-lg w-full"
                 />
