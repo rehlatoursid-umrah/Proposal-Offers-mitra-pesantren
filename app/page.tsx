@@ -25,9 +25,10 @@ export default function Home() {
               <div>
                 <h2 className="text-4xl font-bold mb-8">TENTANG REHLATOURS</h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Rehlatours.id adalah brand travel halal yang berpusat di Bandung, Jawa Barat,
-                  dengan visi menghadirkan perjalanan ibadah yang amanah, legal, dan nyaman bagi umat
-                  Islam di seluruh Indonesia.
+                 Yang kami muliakan Pimpinan Pesantren, Dewan Asatidz, dan Pengurus,
+                 Alhamdulillah, puji syukur kepada Allah SWT. Shalawat dan salam semoga senantiasa tercurah kepada Nabi Muhammad SAW.
+                 Kami dari Rehlatours.id—travel halal yang amanah, mudah, dan terpercaya—hadir dengan program kemitraan khusus pesantren: 
+                 agar pesantren bisa langsung memberangkatkan jamaah ke Tanah Suci sekaligus meraih manfaat ekonomi bagi lembaga.
                 </p>
               </div>
             </div>
