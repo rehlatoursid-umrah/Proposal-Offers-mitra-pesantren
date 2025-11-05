@@ -11,7 +11,7 @@ export function Fleet() {
       smallBaggage: 2,
       largeBaggage: 2,
       count: 24,
-      image: "/sedan.png",
+      image: "/camry.png",
     },
     {
       name: "Hyundai h1/ Hiece",
