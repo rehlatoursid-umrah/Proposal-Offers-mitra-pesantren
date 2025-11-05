@@ -13,7 +13,7 @@ export default function Home() {
 
         <div className="max-w-4xl mx-auto">
           {/* TENTANG REHLATOURS */}
-          <section id="about" className="py-16 px-8">
+          <section id="salam" className="py-16 px-8">
             <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
               <div>
                 <img
@@ -59,7 +59,7 @@ export default function Home() {
           </section>
 
           {/* PAKET UMRAH PILIHAN */}
-          <section id="packages" className="py-16 px-8 border-t border-border">
+          <section id="program" className="py-16 px-8 border-t border-border">
             <h2 className="text-4xl font-bold mb-8">PAKET UMRAH PILIHAN</h2>
             <div className="grid md:grid-cols-3 gap-6">
               {[
@@ -136,7 +136,7 @@ export default function Home() {
           </section>
 
           {/* MENGAPA PESANTREN */}
-          <section id="why-pesantren" className="py-16 px-8 bg-card border-t border-border">
+          <section id="kedudukan" className="py-16 px-8 bg-card border-t border-border">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="space-y-6">
                 <h2 className="text-4xl font-bold">MENGAPA PESANTREN?</h2>
@@ -171,7 +171,7 @@ export default function Home() {
           </section>
 
           {/* SKEMA KOMISI */}
-          <section id="commission" className="py-16 px-8 border-t border-border">
+          <section id="komisi" className="py-16 px-8 border-t border-border">
             <h2 className="text-4xl font-bold mb-8">SKEMA KOMISI UNTUK PESANTREN</h2>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
@@ -207,7 +207,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </section id="armada" >
 
           {/* FLEET */}
           <Fleet />
