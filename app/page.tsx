@@ -17,7 +17,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
               <div>
                 <img
-                  src="/professional-travel-agency-office-team-meeting.jpg"
+                  src="/heroid.jpg"
                   alt="Rehlatours Team"
                   className="rounded-lg shadow-lg w-full"
                 />
