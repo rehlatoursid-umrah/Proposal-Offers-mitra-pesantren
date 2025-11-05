@@ -94,7 +94,7 @@ export default function Home() {
                 {
                   name: "Umrah Plus Turki",
                   duration: "11 Malam 12 Hari",
-                  price: "IDR 32.500.00",
+                  price: "IDR 32.500.000",
                   features: [
                     "Tiket pesawat PP, visa Saudi",
                     "Hotel ★★★★ /Setaraf",
