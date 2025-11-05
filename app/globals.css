@@ -124,25 +124,23 @@
     @apply bg-background text-foreground;
   }
 }
-/* === Floating Airplane Background (Rehlatours Style) === */
+/* === Floating Airplane Background === */
 .bg-floating-icons {
   position: fixed;
   inset: 0;
   overflow: hidden;
   z-index: 0;
-  pointer-events: none; /* biar tidak ganggu klik */
-  background: transparent; /* mengikuti background page */
+  pointer-events: none;
+  background: transparent;
 }
 
-/* Gaya dasar ikon */
 .bg-floating-icons .icon {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   color: #3a0519;
   opacity: 0.35;
-  animation: float 50s linear infinite;
-  filter: drop-shadow(0 0 8px rgba(58, 5, 25, 0.1));
+  animation: float 40s ease-in-out infinite;
 }
 
 /* Posisi acak */
@@ -153,29 +151,30 @@
 }
 .bg-floating-icons .icon:nth-child(2) {
   top: 25%;
-  right: 10%;
-  animation-delay: 10s;
+  right: 8%;
+  animation-delay: 6s;
 }
 .bg-floating-icons .icon:nth-child(3) {
-  bottom: 15%;
-  left: 15%;
-  animation-delay: 5s;
+  bottom: 20%;
+  left: 12%;
+  animation-delay: 12s;
 }
 .bg-floating-icons .icon:nth-child(4) {
-  bottom: 10%;
-  right: 8%;
-  animation-delay: 15s;
+  bottom: 15%;
+  right: 10%;
+  animation-delay: 18s;
 }
 
-/* Efek melayang */
+/* Efek gerak lembut seperti di udara */
 @keyframes float {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translate(0, 0) rotate(0deg);
   }
   50% {
-    transform: translateY(-25px) rotate(10deg);
+    transform: translate(30px, -30px) rotate(20deg);
   }
   100% {
-    transform: translateY(0) rotate(0deg);
+    transform: translate(0, 0) rotate(0deg);
   }
 }
+
