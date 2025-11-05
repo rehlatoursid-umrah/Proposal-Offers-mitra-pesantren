@@ -162,7 +162,7 @@ export default function Home() {
               </div>
               <div>
                 <img
-                  src="/pst.jpg"
+                  src="/skhd.jpg"
                   alt="Pesantren"
                   className="rounded-lg shadow-lg w-full"
                 />
