@@ -7,7 +7,8 @@ import { Plane } from "lucide-react";
 
 
 import { useEffect, useState } from "react";
-import { Plane } from "lucide-react";
+import { Plane as PlaneIcon } from "lucide-react";
+
 
 function AnimatedPlanes() {
   const [scrollY, setScrollY] = useState(0);
