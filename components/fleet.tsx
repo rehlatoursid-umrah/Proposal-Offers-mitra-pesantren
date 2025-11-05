@@ -93,20 +93,20 @@ export function Fleet() {
       ],
     },
     {
-      city: "Makkah, Saudi Arabia",
-      category: "Makkah",
+      city: "Cairo, Egypt",
+      category: "Egypt",
       hotels: [
         {
-          name: "Mahd Alresala Hotel",
-          image: "/hotel-mahd-alresala-makkah.jpg",
+          name: "Paradise Boutique Hotel",
+          image: "/paradise.png",
         },
         {
-          name: "Grand Zowar Hotel",
-          image: "/hotel-grand-zowar-makkah.jpg",
+          name: "Indiana Hotel cairo",
+          image: "/indiana.png",
         },
         {
-          name: "Emaar Elite Hotel",
-          image: "/hotel-emaar-elite-makkah.jpg",
+          name: "Hotel New One cairo",
+          image: "/new one.png",
         },
       ],
     },
@@ -115,16 +115,16 @@ export function Fleet() {
       category: "Madinah",
       hotels: [
         {
-          name: "Sidra Alia Aldahabi",
-          image: "/hotel-sidra-alia-aldahabi-madinah.jpg",
-        },
-        {
-          name: "Hilltown Airport Hotel",
-          image: "/hotel-hilltown-airport-madinah.jpg",
+          name: "Grand Zowar Hotel",
+          image: "/grand zowar.png",
         },
         {
           name: "Artal Taeba Hotel",
-          image: "/hotel-artal-taeba-madinah.jpg",
+          image: "/artal.png",
+        },
+        {
+          name: "Sidra Alia Aldahabi",
+          image: "/sidra.png",
         },
       ],
     },
