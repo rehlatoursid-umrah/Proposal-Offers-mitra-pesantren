@@ -378,25 +378,27 @@ export default function Home() {
         </div>
       </main>
         <style jsx global>{`
-  body {
-    background-color: white;
-    background-image: radial-gradient(
-      rgba(58, 5, 25, 0.2) 1px,
-      transparent 1px
-    );
-    background-size: 40px 40px;
-    animation: subtleMove 20s linear infinite;
-  }
+  /* app/globals.css */
+body {
+  background-color: white;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(58, 5, 25, 0.1),
+    rgba(58, 5, 25, 0.1) 1px,
+    transparent 1px,
+    transparent 20px
+  );
+  animation: moveDiagonal 40s linear infinite;
+}
 
-  @keyframes subtleMove {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 100px 100px;
-    }
+@keyframes moveDiagonal {
+  0% {
+    background-position: 0 0;
   }
-`}</style>
+  100% {
+    background-position: 200px 200px;
+  }
+}
     </div>
   );
 }
