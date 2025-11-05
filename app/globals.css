@@ -124,26 +124,41 @@
     @apply bg-background text-foreground;
   }
 }
-/* === Animated diagonal background pattern === */
+/* === Abstract Galaxy Lines Background === */
 body {
-  background-color: white;
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgba(58, 5, 25, 0.1),
-    rgba(58, 5, 25, 0.1) 1px,
-    transparent 1px,
-    transparent 20px
-  );
-  animation: moveDiagonal 40s linear infinite;
+  background-color: #ffffff;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(58, 5, 25, 0.35) 0px,
+      rgba(58, 5, 25, 0.35) 1px,
+      transparent 1px,
+      transparent 80px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(58, 5, 25, 0.25) 0px,
+      rgba(58, 5, 25, 0.25) 1px,
+      transparent 1px,
+      transparent 100px
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(58, 5, 25, 0.08),
+      transparent 70%
+    );
+  background-size: 300% 300%;
+  animation: galaxyMotion 60s ease-in-out infinite alternate;
 }
 
-@keyframes moveDiagonal {
+@keyframes galaxyMotion {
   0% {
-    background-position: 0 0;
+    background-position: 0% 50%, 50% 0%, 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%, 0% 100%, 60% 40%;
   }
   100% {
-    background-position: 200px 200px;
+    background-position: 50% 100%, 100% 0%, 40% 60%;
   }
 }
-
-
