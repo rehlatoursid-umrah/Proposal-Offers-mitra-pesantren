@@ -75,20 +75,20 @@ export function Fleet() {
       ],
     },
     {
-      city: "Istanbul, Turkey",
-      category: "Turki",
+      city: "Mekkah, Saudi Arabia",
+      category: "Mekkah",
       hotels: [
         {
-          name: "Paradise Boutique Hotel",
-          image: "/hotel-paradise-boutique-istanbul.jpg",
+          name: "Mahd Alresala Hotel",
+          image: "/mahd.png",
         },
         {
-          name: "Intercity Airport Hotel",
-          image: "/hotel-intercity-airport-istanbul.jpg",
+          name: "Abraj Almisk Hotel",
+          image: "/abraj.png",
         },
         {
-          name: "Turkish Heritage Hotel",
-          image: "/hotel-turkish-heritage-istanbul.jpg",
+          name: "Emaar Elite Hotel",
+          image: "/emaar.png",
         },
       ],
     },
