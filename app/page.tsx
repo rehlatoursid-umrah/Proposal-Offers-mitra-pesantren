@@ -43,11 +43,11 @@ export default function Home() {
                 },
                 {
                   title: "Legal",
-                  desc: "Memastikan seluruh keberangkatan sesuai dengan regulasi pemerintah melalui PIHK resmi",
+                  desc: "memastikan seluruh keberangkatan sesuai dengan regulasi pemerintah melalui PIHK resmi",
                 },
                 {
                   title: "Nyaman",
-                  desc: "Menciptakan pengalaman ibadah yang tenang, tertib, dan berkesan",
+                  desc: "menciptakan pengalaman ibadah yang tenang, tertib, dan berkesan",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-card p-6 rounded-lg border border-border">
