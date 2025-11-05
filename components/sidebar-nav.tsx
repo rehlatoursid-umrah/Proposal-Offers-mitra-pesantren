@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Roboto } from "next/font/google"
 
 const roboto = Roboto({
-  weight: ["900"], // Bold
+  weight: ["700"],
   subsets: ["latin"],
 })
 
@@ -24,19 +24,19 @@ export function SidebarNav() {
   return (
     <div className="fixed left-0 top-0 h-screen w-64 bg-background border-r border-border overflow-y-auto pt-6">
       {/* LOGO */}
-      <div className="px-6 mb-2 flex justify-center">
+      <div className="pl-6 mb-3 flex items-start">
         <Image
           src="/rem.png"
           alt="Logo Rehlatours"
-          width={140}     // ukuran logo besar
-          height={140}
+          width={170}     // Logo lebih besar
+          height={170}
           className="object-contain"
           priority
         />
       </div>
 
       {/* NAVIGATION */}
-      <nav className={`space-y-1 px-6 ${roboto.className}`}>
+      <nav className={`space-y-1 pl-6 ${roboto.className}`}>
         {navItems.map((item) => (
           <a
             key={item.id}
