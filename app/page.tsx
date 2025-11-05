@@ -1,4 +1,29 @@
-"use client";
+<div className="bg-floating-icons">
+  <svg className="icon" viewBox="0 0 24 24" fill="none">
+    <path
+      d="M2 16l9-4-9-4v3l7 1-7 1v3zm19-5h-7l-2-5h-2l1 5h-5v2h5l-1 5h2l2-5h7v-2z"
+      fill="currentColor"
+    />
+  </svg>
+  <svg className="icon" viewBox="0 0 24 24" fill="none">
+    <path
+      d="M2 16l9-4-9-4v3l7 1-7 1v3zm19-5h-7l-2-5h-2l1 5h-5v2h5l-1 5h2l2-5h7v-2z"
+      fill="currentColor"
+    />
+  </svg>
+  <svg className="icon" viewBox="0 0 24 24" fill="none">
+    <path
+      d="M2 16l9-4-9-4v3l7 1-7 1v3zm19-5h-7l-2-5h-2l1 5h-5v2h5l-1 5h2l2-5h7v-2z"
+      fill="currentColor"
+    />
+  </svg>
+  <svg className="icon" viewBox="0 0 24 24" fill="none">
+    <path
+      d="M2 16l9-4-9-4v3l7 1-7 1v3zm19-5h-7l-2-5h-2l1 5h-5v2h5l-1 5h2l2-5h7v-2z"
+      fill="currentColor"
+    />
+  </svg>
+</div>
 
 import { SidebarNav } from "@/components/sidebar-nav";
 import { ProposalHeader } from "@/components/proposal-header";
