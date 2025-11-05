@@ -124,40 +124,67 @@
     @apply bg-background text-foreground;
   }
 }
-/* Animasi pesawat melayang */
-.bg-floating-icons {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  z-index: 0;
-}
+{/* ✈️ Animasi Pesawat Pinggir */}
+<div className="absolute inset-0 pointer-events-none z-0">
+  {Array.from({ length: 8 }).map((_, i) => {
+    // posisi acak hanya di pinggir (0–15% dari tepi layar)
+    const side = Math.random();
+    let top = 0, left = 0;
+    if (side < 0.25) {
+      // sisi kiri
+      top = Math.random() * 100;
+      left = Math.random() * 10;
+    } else if (side < 0.5) {
+      // sisi kanan
+      top = Math.random() * 100;
+      left = 90 + Math.random() * 10;
+    } else if (side < 0.75) {
+      // sisi atas
+      top = Math.random() * 10;
+      left = Math.random() * 100;
+    } else {
+      // sisi bawah
+      top = 90 + Math.random() * 10;
+      left = Math.random() * 100;
+    }
 
-.bg-floating-icons .icon {
-  position: absolute;
-  color: #b0aeb4;
-  opacity: 0.3;
-  animation: fly 25s linear infinite;
-}
-
-@keyframes fly {
+    return (
+      <Plane
+        key={i}
+        className="absolute animate-fly-edge"
+        style={{
+          top: `${top}%`,
+          left: `${left}%`,
+          opacity: 0.35,
+          color: "#3a0519",
+          width: `${25 + Math.random() * 30}px`,
+          height: `${25 + Math.random() * 30}px`,
+          animationDuration: `${18 + Math.random() * 10}s`,
+          animationDelay: `${Math.random() * 5}s`,
+        }}
+      />
+    );
+  })}
+</div>
+@keyframes fly-edge {
   0% {
-    transform: translateX(-10vw) translateY(0) rotate(0deg);
-    opacity: 0.2;
+    transform: translateY(0) translateX(0) rotate(0deg);
   }
   25% {
-    transform: translateX(20vw) translateY(-5vh) rotate(10deg);
-    opacity: 0.4;
+    transform: translateY(-3vh) translateX(2vw) rotate(5deg);
   }
   50% {
-    transform: translateX(50vw) translateY(3vh) rotate(0deg);
-    opacity: 0.3;
+    transform: translateY(4vh) translateX(-2vw) rotate(-6deg);
   }
   75% {
-    transform: translateX(75vw) translateY(-8vh) rotate(-5deg);
-    opacity: 0.5;
+    transform: translateY(-2vh) translateX(3vw) rotate(4deg);
   }
   100% {
-    transform: translateX(110vw) translateY(0) rotate(0deg);
-    opacity: 0.2;
+    transform: translateY(0) translateX(0) rotate(0deg);
   }
 }
+
+.animate-fly-edge {
+  animation: fly-edge linear infinite;
+}
+
