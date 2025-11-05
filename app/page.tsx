@@ -1,3 +1,9 @@
+
+
+import { SidebarNav } from "@/components/sidebar-nav";
+import { ProposalHeader } from "@/components/proposal-header";
+import { Fleet } from "@/components/fleet";
+
 export default function Page() {
   return (
     <>
@@ -16,13 +22,6 @@ export default function Page() {
           <path d="M2 16l9-4-9-4v3l7 1-7 1v3zm19-5h-7l-2-5h-2l1 5h-5v2h5l-1 5h2l2-5h7v-2z" />
         </svg>
       </div>
-
-import { SidebarNav } from "@/components/sidebar-nav";
-import { ProposalHeader } from "@/components/proposal-header";
-import { Fleet } from "@/components/fleet";
-
-export default function Home() {
-  return (
     <div className="flex min-h-screen">
       <SidebarNav />
     <main className="flex-1 ml-64 relative z-10">
