@@ -266,7 +266,7 @@ export default function Home() {
                   image: "/hbb tanpa bg.png",
                 },
                 {
-                  name: "Hannan Nur Muhammad, S.T",
+                  name: "Hanan Nur Muhammad, S.T",
                   role: "Co-Founder & Tour Leader",
                   image: "/hnn tnpa bg.png",
                 },
