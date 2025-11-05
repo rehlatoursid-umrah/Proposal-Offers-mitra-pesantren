@@ -335,14 +335,22 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8 flex gap-4">
-                  <button className="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-                    Hubungi Kami
-                  </button>
-                  <button className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition">
-                    Pelajari Lebih Lanjut
-                  </button>
-                </div>
-              </div>
+  <a 
+    href="mailto:mipesa@rehlatours.id"
+    className="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+  >
+    Bergabung Sekarang
+  </a>
+
+  <a 
+    href="https://rehlatours.id" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition"
+  >
+    Website Kami
+  </a>
+</div>
 
               <div>
                 <img
