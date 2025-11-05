@@ -124,41 +124,58 @@
     @apply bg-background text-foreground;
   }
 }
-/* === Abstract Galaxy Lines Background === */
-body {
-  background-color: #ffffff;
-  background-image: 
-    repeating-linear-gradient(
-      45deg,
-      rgba(58, 5, 25, 0.35) 0px,
-      rgba(58, 5, 25, 0.35) 1px,
-      transparent 1px,
-      transparent 80px
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      rgba(58, 5, 25, 0.25) 0px,
-      rgba(58, 5, 25, 0.25) 1px,
-      transparent 1px,
-      transparent 100px
-    ),
-    radial-gradient(
-      circle at 50% 50%,
-      rgba(58, 5, 25, 0.08),
-      transparent 70%
-    );
-  background-size: 300% 300%;
-  animation: galaxyMotion 60s ease-in-out infinite alternate;
+/* === Floating Airplane Background (Rehlatours Style) === */
+.bg-floating-icons {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none; /* biar tidak ganggu klik */
+  background: transparent; /* mengikuti background page */
 }
 
-@keyframes galaxyMotion {
+/* Gaya dasar ikon */
+.bg-floating-icons .icon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  color: #3a0519;
+  opacity: 0.35;
+  animation: float 50s linear infinite;
+  filter: drop-shadow(0 0 8px rgba(58, 5, 25, 0.1));
+}
+
+/* Posisi acak */
+.bg-floating-icons .icon:nth-child(1) {
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+.bg-floating-icons .icon:nth-child(2) {
+  top: 25%;
+  right: 10%;
+  animation-delay: 10s;
+}
+.bg-floating-icons .icon:nth-child(3) {
+  bottom: 15%;
+  left: 15%;
+  animation-delay: 5s;
+}
+.bg-floating-icons .icon:nth-child(4) {
+  bottom: 10%;
+  right: 8%;
+  animation-delay: 15s;
+}
+
+/* Efek melayang */
+@keyframes float {
   0% {
-    background-position: 0% 50%, 50% 0%, 50% 50%;
+    transform: translateY(0) rotate(0deg);
   }
   50% {
-    background-position: 100% 50%, 0% 100%, 60% 40%;
+    transform: translateY(-25px) rotate(10deg);
   }
   100% {
-    background-position: 50% 100%, 100% 0%, 40% 60%;
+    transform: translateY(0) rotate(0deg);
   }
 }
