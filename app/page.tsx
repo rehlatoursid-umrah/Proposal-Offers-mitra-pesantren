@@ -4,43 +4,26 @@ import { SidebarNav } from "@/components/sidebar-nav";
 import { ProposalHeader } from "@/components/proposal-header";
 import { Fleet } from "@/components/fleet";
 
-export default function Page() {
-  return (
-    <div className="flex min-h-screen relative">
-      {/* ✈️ Animasi pesawat di background */}
-      <div className="bg-floating-icons absolute inset-0 -z-10 pointer-events-none">
-        <svg className="icon" viewBox="0 0 24 24" fill="#3a0519" style={{ opacity: 0.35 }}>
-          <path d="M2 16l9-4-9-4v3l7 1-7 1v3zm19-5h-7l-2-5h-2l1 5h-5v2h5l-1 5h2l2-5h7v-2z" />
-        </svg>
-        <svg className="icon" viewBox="0 0 24 24" fill="#3a0519" style={{ opacity: 0.35 }}>
-          <path d="M2 16l9-4-9-4v3l7 1-7 1v3zm19-5h-7l-2-5h-2l1 5h-5v2h5l-1 5h2l2-5h7v-2z" />
-        </svg>
-        <svg className="icon" viewBox="0 0 24 24" fill="#3a0519" style={{ opacity: 0.35 }}>
-          <path d="M2 16l9-4-9-4v3l7 1-7 1v3zm19-5h-7l-2-5h-2l1 5h-5v2h5l-1 5h2l2-5h7v-2z" />
-        </svg>
-        <svg className="icon" viewBox="0 0 24 24" fill="#3a0519" style={{ opacity: 0.35 }}>
-          <path d="M2 16l9-4-9-4v3l7 1-7 1v3zm19-5h-7l-2-5h-2l1 5h-5v2h5l-1 5h2l2-5h7v-2z" />
-        </svg>
-      </div>
-
-      {/* Konten utama */}
-      <SidebarNav />
-      <main className="flex-1 ml-64 relative z-10">
-        <ProposalHeader />
-
-        <div className="max-w-4xl mx-auto">
-import { SidebarNav } from "@/components/sidebar-nav";
-import { ProposalHeader } from "@/components/proposal-header";
-import { Fleet } from "@/components/fleet";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen bg-background">
-      <SidebarNav />
-      <main className="flex-1 ml-64">
-        <ProposalHeader />
+    <div className="flex min-h-screen relative overflow-y-auto bg-background">
+      {/* ✈️ Background animasi pesawat */}
+      <div className="bg-floating-icons pointer-events-none">
+        {[...Array(6)].map((_, i) => (
+          <svg
+            key={i}
+            className="icon"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M2 16l9-4-9-4v3l7 1-7 1v3zm19-5h-7l-2-5h-2l1 5h-5v2h5l-1 5h2l2-5h7v-2z" />
+          </svg>
+        ))}
+      </div>
 
-        <div className="max-w-4xl mx-auto">
+      <SidebarNav />
+
+      <main className="flex-1 ml-64 relative z-10">
           {/* TENTANG REHLATOURS */}
           <section id="about" className="py-16 px-8">
             <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
