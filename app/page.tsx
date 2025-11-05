@@ -80,7 +80,7 @@ export default function Home() {
                 {
                   name: "Umrah Plus Mesir",
                   duration: "11 Malam 12 Hari",
-                  price: "Hub. Admin",
+                  price: "IDR 33.500.000",
                   features: [
                      "Tiket pesawat PP, visa Mesir & Saudi",
                     "Hotel ★★★★ /Setaraf",
@@ -94,13 +94,14 @@ export default function Home() {
                 {
                   name: "Umrah Plus Turki",
                   duration: "11 Malam 12 Hari",
-                  price: "Hub. Admin",
+                  price: "IDR 32.500.00",
                   features: [
-                    "Paket Reguler +",
-                    "e-Visa Turki",
-                    "City Tour Istanbul",
-                    "Masjid Biru & Hagia Sophia",
-                    "Kapal Bosporus",
+                    "Tiket pesawat PP, visa Saudi",
+                    "Hotel ★★★★ /Setaraf",
+                    "Mutawwif / mutawwifah, panduan & manasik online",
+                    "Transfer bandara + city tour Makkah, Madinah, Istanbul",
+                    "Hotel + meals",
+                    "Asuransi perjalanan",
                   ],
                   image: "/masjid-biru-blue-mosque-istanbul-turki.jpg",
                 },
