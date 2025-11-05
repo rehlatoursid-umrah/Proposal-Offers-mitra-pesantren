@@ -1,4 +1,4 @@
-"use client"
+
 
 import { SidebarNav } from "@/components/sidebar-nav";
 import { ProposalHeader } from "@/components/proposal-header";
