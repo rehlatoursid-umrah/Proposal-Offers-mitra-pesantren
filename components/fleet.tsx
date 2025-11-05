@@ -57,20 +57,20 @@ export function Fleet() {
 
   const hotelsByCity = [
     {
-      city: "Cairo, Egypt",
-      category: "Mesir",
+      city: "Istanbul, Turkey",
+      category: "Turkey",
       hotels: [
         {
-          name: "Indiana Hotel Cairo",
-          image: "/hotel-indiana-cairo.jpg",
+          name: "Hilltown Airport Hotel",
+          image: "/hilton.png",
         },
         {
           name: "Meshk Airport Hotel",
-          image: "/hotel-meshk-airport-cairo.jpg",
+          image: "/meshk.png",
         },
         {
-          name: "Hotel New One Cairo",
-          image: "/hotel-new-one-cairo.jpg",
+          name: "Intercity Airport Hotel",
+          image: "/intercity.png",
         },
       ],
     },
