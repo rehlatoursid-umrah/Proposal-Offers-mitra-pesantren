@@ -220,17 +220,17 @@ export default function Home() {
                 {
                   name: "Hana Fatimah, S.Gz., M.Gz",
                   text: "Pengalaman umroh yang bikin ketagihan. Di rehlatours kita tidak perlu ribet ngurus.",
-                  image: "/professional-woman-portrait.png",
+                  image: "/hana.jpg",
                 },
                 {
                   name: "Reviani Lestari, S.P.",
                   text: "Rehlatour beda banget. Mulai dari persiapan sampai pulang, layanannya memuaskan.",
-                  image: "/professional-woman-smiling-portrait.png",
+                  image: "/reviani.jpg",
                 },
                 {
                   name: "Bapak Mulyadi",
                   text: "Umroh dengan Rehlatour adalah ibadah paling seru dan bermakna dalam hidup saya.",
-                  image: "/professional-man-portrait.png",
+                  image: "/mulyadi.jpg",
                 },
               ].map((testimonial, idx) => (
                 <div
@@ -263,17 +263,17 @@ export default function Home() {
                 {
                   name: "Habib Arifin Makhtum",
                   role: "Founder & Director",
-                  image: "/professional-man-founder-director.jpg",
+                  image: "/hbb tanpa bg.png",
                 },
                 {
-                  name: "Hannan Nur",
-                  role: "Co-Founder",
-                  image: "/professional-man-co-founder.jpg",
+                  name: "Hannan Nur Muhammad, S.T",
+                  role: "Co-Founder & Tour Leader",
+                  image: "/hnn tnpa bg.png",
                 },
                 {
                   name: "Ridwan Fauzi, Lc.",
                   role: "Tour Leader",
-                  image: "/professional-man-tour-guide.jpg",
+                  image: "/rf.png",
                 },
               ].map((member, idx) => (
                 <div
