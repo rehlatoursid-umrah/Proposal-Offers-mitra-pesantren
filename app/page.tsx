@@ -5,6 +5,65 @@ import { ProposalHeader } from "@/components/proposal-header";
 import { Fleet } from "@/components/fleet";
 import { Plane } from "lucide-react";
 
+
+import { useEffect, useState } from "react";
+import { Plane } from "lucide-react";
+
+function AnimatedPlanes() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+      {Array.from({ length: 10 }).map((_, i) => {
+        // posisi hanya di pinggir
+        const side = Math.random();
+        let top = 0, left = 0;
+        if (side < 0.25) {
+          top = Math.random() * 100;
+          left = Math.random() * 10;
+        } else if (side < 0.5) {
+          top = Math.random() * 100;
+          left = 90 + Math.random() * 10;
+        } else if (side < 0.75) {
+          top = Math.random() * 10;
+          left = Math.random() * 100;
+        } else {
+          top = 90 + Math.random() * 10;
+          left = Math.random() * 100;
+        }
+
+        // efek parallax dari scroll
+        const offsetY = (scrollY * 0.05 * (i % 3 === 0 ? 1 : -1)) % 30;
+
+        return (
+          <Plane
+            key={i}
+            className="absolute animate-fly-edge"
+            style={{
+              top: `${top + offsetY}px`,
+              left: `${left}%`,
+              opacity: 0.25,
+              color: "#4b1d2b",
+              width: `${20 + Math.random() * 40}px`,
+              height: `${20 + Math.random() * 40}px`,
+              animationDuration: `${15 + Math.random() * 12}s`,
+              animationDelay: `${Math.random() * 4}s`,
+            }}
+          />
+        );
+      })}
+    </div>
+  );
+}
+
+
+
 export default function Home() {
   return (
     <div className="flex min-h-screen bg-background relative overflow-hidden">
