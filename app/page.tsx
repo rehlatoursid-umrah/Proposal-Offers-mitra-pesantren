@@ -4,7 +4,7 @@ import { Fleet } from "@/components/fleet";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen bg-background">
+    <div className="flex min-h-screen">
       <SidebarNav />
       <main className="flex-1 ml-64">
         <ProposalHeader />
@@ -375,6 +375,26 @@ export default function Home() {
           </footer>
         </div>
       </main>
+        <style jsx global>{`
+  body {
+    background-color: white;
+    background-image: radial-gradient(
+      rgba(58, 5, 25, 0.2) 1px,
+      transparent 1px
+    );
+    background-size: 40px 40px;
+    animation: subtleMove 20s linear infinite;
+  }
+
+  @keyframes subtleMove {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100px 100px;
+    }
+  }
+`}</style>
     </div>
   );
 }
