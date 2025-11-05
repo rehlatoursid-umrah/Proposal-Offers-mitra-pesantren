@@ -3,12 +3,8 @@
 import { SidebarNav } from "@/components/sidebar-nav";
 import { ProposalHeader } from "@/components/proposal-header";
 import { Fleet } from "@/components/fleet";
-import { Plane } from "lucide-react";
-
-
-import { useEffect, useState } from "react";
 import { Plane as PlaneIcon } from "lucide-react";
-
+import { useEffect, useState } from "react";
 
 function AnimatedPlanes() {
   const [scrollY, setScrollY] = useState(0);
@@ -24,7 +20,8 @@ function AnimatedPlanes() {
       {Array.from({ length: 10 }).map((_, i) => {
         // posisi hanya di pinggir
         const side = Math.random();
-        let top = 0, left = 0;
+        let top = 0,
+          left = 0;
         if (side < 0.25) {
           top = Math.random() * 100;
           left = Math.random() * 10;
@@ -43,7 +40,7 @@ function AnimatedPlanes() {
         const offsetY = (scrollY * 0.05 * (i % 3 === 0 ? 1 : -1)) % 30;
 
         return (
-          <Plane
+          <PlaneIcon
             key={i}
             className="absolute animate-fly-edge"
             style={{
@@ -63,15 +60,13 @@ function AnimatedPlanes() {
   );
 }
 
-
-
 export default function Home() {
   return (
     <div className="flex min-h-screen bg-background relative overflow-hidden">
       {/* ✈️ Animasi Pesawat Background */}
       <div className="absolute inset-0 pointer-events-none z-0">
         {Array.from({ length: 6 }).map((_, i) => (
-          <Plane
+          <PlaneIcon
             key={i}
             className="absolute animate-fly"
             style={{
@@ -89,12 +84,9 @@ export default function Home() {
       </div>
 
       {/* 🌙 Konten utama */}
-
-<div className="relative z-10 flex min-h-screen w-full">
+      <div className="relative z-10 flex min-h-screen w-full">
         <SidebarNav />
         <main className="flex-1 ml-64">
-
-
           {/* TENTANG REHLATOURS */}
           <section id="about" className="py-16 px-8">
             <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
@@ -458,8 +450,8 @@ export default function Home() {
               <p>&copy; 2025 Rehlatours.id. All rights reserved.</p>
             </div>
           </footer>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
   );
 }
