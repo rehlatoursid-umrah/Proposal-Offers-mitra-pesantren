@@ -10,14 +10,14 @@ const roboto = Roboto({
 
 const navItems = [
   { id: "intro", label: "Introduction" },
-  { id: "about", label: "About Us" },
-  { id: "packages", label: "Our Packages" },
-  { id: "why-pesantren", label: "Why Pesantren?" },
-  { id: "benefits", label: "Partnership Benefits" },
-  { id: "commission", label: "Your Investment" },
-  { id: "testimonials", label: "Testimonials" },
-  { id: "team", label: "Our Team" },
-  { id: "next-steps", label: "Next Steps" },
+  { id: "salam", label: "Hormat Kami" },
+  { id: "program", label: "Program Kami" },
+  { id: "kedudukan", label: "Kedudukan Pesantren" },
+  { id: "komisi", label: "Skema Kerja Sama" },
+  { id: "testimonials", label: "Apa Kata Mereka?" },
+  { id: "armada", label: "Armada & Hotel" },
+  { id: "team", label: "Tim Kami" },
+  { id: "next-steps", label: "Lahkah Berikutnya" },
 ]
 
 export function SidebarNav() {
