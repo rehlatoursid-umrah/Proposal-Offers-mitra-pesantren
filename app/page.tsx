@@ -1,3 +1,5 @@
+"use client";
+
 import { SidebarNav } from "@/components/sidebar-nav";
 import { ProposalHeader } from "@/components/proposal-header";
 import { Fleet } from "@/components/fleet";
@@ -6,7 +8,7 @@ import { Plane } from "lucide-react";
 export default function Home() {
   return (
     <div className="flex min-h-screen bg-background relative overflow-hidden">
-      {/* ✈️ Background Animasi Pesawat */}
+      {/* ✈️ Animasi Pesawat Background */}
       <div className="absolute inset-0 pointer-events-none z-0">
         {Array.from({ length: 6 }).map((_, i) => (
           <Plane
@@ -17,8 +19,8 @@ export default function Home() {
               left: `${Math.random() * 90}%`,
               opacity: 0.35,
               color: "#3a0519",
-              width: `${40 + Math.random() * 40}px`,
-              height: `${40 + Math.random() * 40}px`,
+              width: `${30 + Math.random() * 40}px`,
+              height: `${30 + Math.random() * 40}px`,
               animationDuration: `${15 + Math.random() * 10}s`,
               animationDelay: `${Math.random() * 5}s`,
             }}
@@ -26,11 +28,21 @@ export default function Home() {
         ))}
       </div>
 
-      {/* 🌙 Sidebar dan Konten */}
+      {/* 🌙 Konten utama */}
       <SidebarNav />
-
       <main className="flex-1 ml-64 relative z-10">
         <ProposalHeader />
+
+        <div className="max-w-4xl mx-auto">
+          {/* TENTANG REHLATOURS */}
+          <section id="about" className="py-16 px-8">
+            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+              <div>
+                <img
+                  src="/professional-travel-agency-office-team-meeting.jpg"
+                  alt="Rehlatours Team"
+                  className="rounded-lg shadow-lg w-full"
+                />
               </div>
               <div>
                 <h2 className="text-4xl font-bold mb-8">TENTANG REHLATOURS</h2>
