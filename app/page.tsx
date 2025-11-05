@@ -23,7 +23,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h2 className="text-4xl font-bold mb-8">TENTANG REHLATOURS</h2>
+                <h2 className="text-4xl font-bold mb-8">SALAM HORMAT</h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                  Yang kami muliakan Pimpinan Pesantren, Dewan Asatidz, dan Pengurus,   
                  Alhamdulillah, puji syukur kepada Allah SWT.
