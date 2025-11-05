@@ -124,3 +124,26 @@
     @apply bg-background text-foreground;
   }
 }
+/* === Animated diagonal background pattern === */
+body {
+  background-color: white;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(58, 5, 25, 0.08),
+    rgba(58, 5, 25, 0.08) 1px,
+    transparent 1px,
+    transparent 20px
+  );
+  animation: moveDiagonal 40s linear infinite;
+}
+
+@keyframes moveDiagonal {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200px 200px;
+  }
+}
+
+
