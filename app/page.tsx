@@ -207,7 +207,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section id="armada" >
+          </section id="armada">
 
           {/* FLEET */}
           <Fleet />
