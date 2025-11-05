@@ -272,7 +272,7 @@ export default function Home() {
                 },
                 {
                   name: "Ridwan Fauzi, Lc.",
-                  role: "Tour Leader",
+                  role: "Tour Leader & Manager Operasional",
                   image: "/rf.png",
                 },
               ].map((member, idx) => (
